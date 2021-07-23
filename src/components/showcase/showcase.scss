@@ -1,0 +1,126 @@
+@import '../../global.scss';
+.showCaseTitle{
+    text-align: center;
+    @include mobile{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+}
+.showCase{
+    display: flex;
+    flex-direction: row;
+    height: 85%;
+    overflow-y: none;
+    
+    .hide{
+        @include mobile{
+            display: none;
+        }
+    }
+    .left{
+        width: 40%;
+        @include mobile{
+            display: none;
+        }
+       
+       padding-left: 50px;
+
+        .carousel{
+            height: 100%;
+            width: 100%;
+            overflow-y: hidden;
+
+            .img{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    .right{ 
+        @include mobile{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        overflow-y: none;
+
+        
+
+        h2{
+            @include mobile{
+                font-size: 18px;
+            }
+        }
+
+        p{
+            width: 90%;
+            @include mobile{
+                width: 90%;
+                text-align: center;
+                font-size: 13px;
+            }
+        
+        }
+        hr{
+            width: 90%;
+            background-color: #ff6e40;
+        }
+        .title{
+            @include mobile{
+              
+                font-size: 15px;
+            }
+        }
+        .lienUtile{
+            margin-top: 10px;
+        }
+
+       .flex{
+           @include mobile{
+                width: 100%;
+               display: flex;
+               flex-direction: row;
+               justify-content: space-around;
+               padding-left: 20px;
+               padding-right: 20px;
+            }
+       }
+        .bottom{
+            margin-top: auto;
+           
+            
+            .logo_prog{
+                width: 50px;
+                height: 50px;
+                margin: 0px 10px;
+                @include mobile{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        h3{
+            margin-top: auto;
+        }
+
+        .logo{
+            width: 50px;
+            height: 50px;
+            @include mobile{
+                    width: 40px;
+                    height: 40px;
+                }
+        }
+         .containerRow{
+                display: flex;
+                flex-direction: row;
+                margin-top: 10px;
+            }
+    }
+}
