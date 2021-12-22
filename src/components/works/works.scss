@@ -106,10 +106,10 @@
                             justify-content: center;
                             align-items: center;
                             @include mobile {
-                            margin-right: 10px;
+                                width: 50%;
                             }
                             img{
-                                width: 25px;
+                                width: 20px;
                                
                             }
                         }
@@ -124,7 +124,8 @@
                         p{
                             font-size: 13px;
                             @include mobile {
-                             font-size: 11px;
+                                font-size: 10px;
+                                width: 100%;
                             }
                         }
                         span{

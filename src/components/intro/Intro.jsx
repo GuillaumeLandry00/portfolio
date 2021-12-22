@@ -27,6 +27,7 @@ export default function Intro() {
                     <h2>Hey, je suis</h2>
                     <h1>Guillaume Landry</h1>
                     <h3>Développeur, <span ref={textRef}></span></h3>
+                    <small className='desc'>Jeune programmeur ambitieux, avec une soif de connaisance qui est toujours prêt à relever son prochain défi. Possédant une motivation sans faille et avec un grand optimisite, je saurai mener à bien les divers projets et demandes.</small>
                 </div>
                 <a href="#portfolio">
                     <ExpandMoreIcon className='icon' />

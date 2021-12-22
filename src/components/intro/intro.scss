@@ -4,6 +4,14 @@
     background-color: $background;
     display: flex;
 
+    .desc{
+        width: 80%;
+        @include mobile{
+            width: 90%;
+            text-align: center;
+        }
+    }
+
     @include mobile{
         flex-direction: column;
         align-items: center;
@@ -91,6 +99,9 @@
             position: absolute;
             bottom: 10px;
             left: 40%;
+            @include mobile{
+                display: none;    
+            }
             
         }
 

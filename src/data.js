@@ -141,15 +141,15 @@ export const travailData = [
         id: '1',
         icon: 'https://guillaumeartiste3d.ca/wp-content/uploads/mobile.png',
         title: 'Voyages à prix fou',
-        desc: 'Durant mon temps chez Voyages à prix fou............',
+        desc: "Au cours de mon passage chez voyages à prix fou, j'ai eu le devoir d'apprendre de nouvelles technologies comme React et React Native. Aves ces nouvelles connaisances, j'ai dévoloppé une application mobile entière pour android et IOS, j'ai aussi développé le back-end qui permet de réserver un voyage à l'aide de l'API softvoyage.",
         date: '2021-01 à maintenant',
         img: 'https://guillaumeartiste3d.ca/wp-content/uploads/montage1.png'
     },
     {
         id: '2',
         icon: 'https://guillaumeartiste3d.ca/wp-content/uploads/globe.png',
-        title: 'Indywork',
-        desc: 'Durant mon temps chez indywork',
+        title: 'Doussou Formation',
+        desc: "Au cours de mon passage chez Doussou, j'ai relever plusieurs défis tel que créer des extentisions WordPress, développement d'un systeme de soumission de contrats, publication de contrats, gestion complète d'un profil, service de paiement à l'aide de stripe et un système d'admission.",
         date: '2020-10 à 2021-01',
         img: 'https://guillaumeartiste3d.ca/wp-content/uploads/indy4.png'
     },
