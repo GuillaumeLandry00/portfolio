@@ -6,21 +6,22 @@ export default function TopBar({ menuOpen, setMenuOpen }) {
         <div className={'topbar ' + (menuOpen && 'active')}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className='logo'>Guillaume</a>
-                    <div className="itemContainer">
-                        <Phone className='icon' />
-                        <a href="tel:4385021402"><span>(438)502-1402</span></a>
-                    </div>
-                    <div className="itemContainer">
-                        <Mail className='icon' />
-                        <a href='mailto:landry.guillaume00@hotmail.com'><span>landry.guillaume00@hotmail.com</span></a>
-                    </div>
-                </div>
-                <div className="right">
-                    <div className="hamburger" onClick={() => (setMenuOpen(!menuOpen))}>
-                        <span className='line1'></span>
-                        <span className='line2'></span>
-                        <span className='line3'></span>
+                    <a href="#intro" className='logo'>The Scene</a>
+                    <div className="navContainer">
+                        <div className="itemContainer">
+                            <a href="#"><span>Music videos</span></a>
+                        </div>
+                        <div className="itemContainer">
+
+                            <a href='#'><span>Merch</span></a>
+                        </div>
+                        <div className="itemContainer">
+
+                            <a href='#'><span>Art Galleries</span></a>
+                        </div>
+                        <div className="itemContainer">
+                            <a href='#'><span>Updates</span></a>
+                        </div>
                     </div>
                 </div>
             </div>

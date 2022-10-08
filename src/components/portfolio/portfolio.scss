@@ -1,125 +1,48 @@
 @import '../../global.scss';
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
 
 .portfolio{
-    background-color: white;
+     background-image: url("../../assets/patternBlue.jfif");
+    background-repeat:repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
+
 
     h1{
+        margin-top: 30px;
+        border-bottom: 1px solid whitesmoke;
+        font-weight: 200;
         font-size: 50px;
-
+        color: whitesmoke;
+        font-family: 'Inconsolata', monospace;
         @include mobile{
             font-size: 20px;
             overflow: hidden;
         }
     }
 
-    ul{
-        margin: 10px;
-        padding:0;
-        list-style: none;
-        display: flex;
-        @include mobile{
-            margin-top: 10px;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            height: 80px;
-        }
-        
+    .videoContainer{
+        margin-top: 20px;
+        width: 80%;
+        height: 80%;
+        margin-bottom: -20px;
     }
 
-    .container{
-        height: 30%;
+    .iframe{
+        position: relative; 
+        height: 90%; 
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        @include mobile{
-            flex-wrap: unset;
-            width: 100vw;
-            height: 240px;
-            overflow-y: scroll;
-            overflow-x: auto !important;
-            white-space: nowrap;
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
-
-        
-
-        .item{
-            width: 350px;
-            height: 220px;
-            border-radius: 20px;
-            border:1px solid black;
-            margin: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            position: relative;
-            transition: all 0.9s ease;
-            cursor: pointer;
-
-            @include mobile{
-                min-width: 225px;
-                min-height: 200px;
-                width: 225px;
-                height: 200px;
-            }
-
-            h3{
-                position: absolute;
-                font-size: 20px;
-            }
-
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: 1;
-            }
-
-            &:hover{
-                background-color: $mainColor;
-                img{
-                    z-index: 0;
-                    opacity: 0.2;
-                }
-               
-            }
-            
-        }
-
-    }
-    .showCaseContainer{
-        height: 50%;
-        overflow-y: none;
-    }
-    .anchor{
-        position: absolute;
-        bottom: 10px;
-        right: 25%;
-       @include mobile{
-            display: none;
-        }
-        
     }
 
-    .icon{
-        font-size: 55px;
-        color: $mainColor;
-        animation: blinkCursor 2s infinite;
-    }
+    .arrowContainer{
+        color: yellow;
+        margin-left: auto;
+        margin-right: auto;
 
-    @keyframes blinkCursor{
-        100%{
-            opacity: 0;
+        span{
+            margin-right: 30px;
+            margin-left: 30px;
         }
     }
     
